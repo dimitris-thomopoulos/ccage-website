@@ -5,31 +5,91 @@
     <link href="favicon.ico" rel="icon" type="image/x-icon" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>C.CAGE - History of Corfu in AR</title>
+    <title>C.CAGE - Corfu Culture in AR</title>
     <link type="text/css" href="styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link type="text/css" href="https://commons.ionio.gr/commons/inclusive/css_frontend_inclusive_b42.css" rel="stylesheet" />
     <script src="https://commons.ionio.gr/commons/inclusive/js_frontend_inclusive.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
-<body>
 
-    <div class="wrap header-wrap">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="bg-warning justify-content-evenly">
-                        <ul>
-                            <li class=""><a href="#" class="">Test</a></li>
+<body id="top">
+
+    <header>
+        <div id="navbar" class="wrap nav-wrap w-100 top-0 position-absolute" style="z-index:1;">
+            <div class="container-fluid">
+                <div class="row">
+                    <nav class="col-12 bg-transparent d-md-flex align-items-center justify-content-between">
+                        <a id="logo" href="#" class="d-inline"><img src="./images/logo.png" alt="C.CAGE - Corfu Culture in AR"></a>
+                        <ul class="navmenu list-unstyled d-inline d-inline-flex justify-content-evenly me-5">
+                            <li class="d-inline-flex"><a href="#" class="p-4 fs-5 fw-bold text-uppercase fromLeft">ΑΡΧΙΚΗ</a></li>
+                            <li class="d-inline-flex"><a href="#" class="p-4 fs-5 fw-bold text-uppercase fromLeft">ΠΕΡΙΓΡΑΦΗ</a></li>
+                            <li class="d-inline-flex"><a href="#" class="p-4 fs-5 fw-bold text-uppercase fromLeft">ΣΥΛΛΟΓΗ</a></li>                            
+                            <li class="d-inline-flex"><a href="#" class="p-4 fs-5 fw-bold text-uppercase fromLeft">ΠΑΙΞΤΕ ΤΩΡΑ</a></li>                        
                         </ul>
+                        
+                        <div id="burger-menu" class="d-flex flex-column justify-content-between" style="height: 25px; width: 32px;">
+                            <div class="line bg-white inactive"></div>
+                            <div class="line bg-white inactive"></div>
+                            <div class="line bg-white inactive"></div>
+                        </div>
                     </nav>
                 </div>
             </div>
+            
         </div>
+
+        <!-- <div id="navbar-mobile" class="wrap d-inline-block position-absolute" style="height: 32px; width: 32px; z-index: 2;">
+        </div> -->
+    
+        <div id="video" class="wrap header-wrap position-relative d-flex align-items-center top-0">
+            <div class="container-fluid px-0 position-absolute">
+                <video class="w-100" autoplay loop muted>
+                    <source src="./video.mp4" type="video/mp4">
+                </video>
+            </div>
+
+
+            <div id="headtitles" class="container-fluid position-relative d-flex align-items-center mt-80" style="height: 600px;">
+                <div class="row d-flex align-items-center">
+                    <div class="col-6 sm-col-12">
+                        <h1 class="text-white" style="font-size: 42px;">Γνωρίστε την Πολιτιστική Κληρονομιά της Κέρκυρας.</h1>
+                    </div>
+                    
+                    <div class="col-6 d-flex flex-column align-items-center" style="padding: 0 100px;">
+                        <p id="header-description" class="text-white t-justify" style="padding: 20px 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et facere qui iusto quibusdam consequuntur illo eveniet, dolores in voluptatem, tenetur non voluptatum aut? Laboriosam vitae doloribus amet quidem nihil corporis. Et facere qui iusto quibusdam co iusto quibusdam co iustois. Et facere qui iusto quibusdam co iusto.</p>
+                        
+                        <a href="#" class="fw-bold fs-5 read-more">ΔΕΙΤΕ ΠΕΡΙΣΣΟΤΕΡΑ</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+    <div class="container px-0">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero laboriosam quod tenetur reiciendis magni porro praesentium repellat omnis, odio laudantium placeat ex iure fugit quibusdam aperiam cum! Voluptas, totam cumque.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero laboriosam quod tenetur reiciendis magni porro praesentium repellat omnis, odio laudantium placeat ex iure fugit quibusdam aperiam cum! Voluptas, totam cumque.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero laboriosam quod tenetur reiciendis magni porro praesentium repellat omnis, odio laudantium placeat ex iure fugit quibusdam aperiam cum! Voluptas, totam cumque.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero laboriosam quod tenetur reiciendis magni porro praesentium repellat omnis, odio laudantium placeat ex iure fugit quibusdam aperiam cum! Voluptas, totam cumque.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero laboriosam quod tenetur reiciendis magni porro praesentium repellat omnis, odio laudantium placeat ex iure fugit quibusdam aperiam cum! Voluptas, totam cumque.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero laboriosam quod tenetur reiciendis magni porro praesentium repellat omnis, odio laudantium placeat ex iure fugit quibusdam aperiam cum! Voluptas, totam cumque.</p>
     </div>
 
 
+    
+    
+	<a href="#top" id="scroll-top" class="scroller tp" title="TOP"></a>
 
     <script src="./app.js"></script>
 </body>

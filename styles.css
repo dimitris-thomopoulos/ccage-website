@@ -44,22 +44,303 @@ table {
 }
 
 :root {
-    --prim: #98c000;
+    --primary: #1c4d84;
     --sec: #F06543;
     --text: #5e5e5e;
     --lighttext: #919191;
     --hr: #2b2b2b;
-  }
+	--white: #fff;
+}
 
-  @media (min-width: 768px) { /*sm*/
+img, svg, button, iframe, video {
+	user-select: none !important;
+}
+
+body *::selection {
+	background-color: var(--primary) !important;
+	color: white;
+}
+
+h1, h2, h3, h4, nav ul li a, header a {
+	font-family: 'Jura' !important;
+}
+
+span, p, h5, h6, b, a {
+    font-family: 'Manrope' !important;
+}
+
+@media (min-width: 768px) { /*sm*/
 	
-  }
-  @media (min-width: 992px) { /*md*/
-      .parallax-wrap-a{padding:0;
-  }
-  @media (min-width: 1200px) { /*lg*/
+}
+
+@media (min-width: 992px) { /*md*/
+    .parallax-wrap-a {
+		padding:0
+	};
+}
+
+@media (min-width: 1200px) { /*lg*/
       
-  }
-  @media (min-width: 1500px) { /*xl*/
+}
+
+@media (min-width: 1500px) { /*xl*/
       
-  }
+}
+
+a {
+	outline: none !important;
+	text-decoration: none !important;
+}
+
+button {
+	outline: none !important;
+	border: none !important;
+}
+
+ul.navmenu li a {
+	color: white;
+}
+
+ul.navmenu li a::after {
+	display: block;
+	content: '';
+	border-bottom: solid 2px;
+	border-color: #fff;
+	transform: scaleX(0);  
+	transition: transform 250ms ease-in-out, border-color 250ms ease-in-out;
+}
+
+ul.navmenu li a.fromLeft:hover::after {
+	transform: scaleX(1); transform-origin: 0% 50%;
+}
+
+ul.navmenu li a.fromLeft::after {
+	transform-origin:  100% 50%;
+}
+
+
+#video .container-fluid:first-child::before {
+	content:'';
+	position: absolute;
+	top:0;
+	right:0;
+	left:0;
+	bottom:0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to bottom, rgba(10, 59, 114, 1), rgba(28, 77, 132, 0.5),  rgba(28, 77, 132, 0.5), rgba(28, 77, 132, 0.5), rgba(28, 77, 132, 0.5),rgba(28, 77, 132, 0.5), rgba(28, 77, 132, 0.5),rgba(28, 77, 132, 0.5), rgba(28, 77, 132, 0.5));
+}
+
+
+
+/* Sticky Navbar */
+
+
+/* Style the navbar */
+#navbar {
+	overflow: hidden;
+	background-color: transparent;
+	transition: background 0.3s ease-in-out;
+}  
+  
+ /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+#navbar.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: rgba(28, 77, 132, 0.8);
+	backdrop-filter: blur(6px);
+	transition: background 0.3s ease-in-out, backdrop-filter 0.3s ease-in-out;
+ }
+
+#navbar ul li a.sticky {
+	color: #1c4d84;
+	transition: 0.3s ease-in-out;
+}
+
+/* #navbar.sticky ul.navmenu li a::after {
+	border-color: #1c4d84;
+	transition: transform 250ms ease-in-out, border-color 250ms ease-in-out;
+} */
+
+#logo {
+	margin-left: 50px;
+}
+
+#logo img {
+	height: 71.99px;
+}
+
+@media (max-width: 480px) {
+	#logo {
+		margin-left: 0px;
+	}	
+}
+
+#video {
+	padding-top: 0;
+	transition: padding-top 0.3s ease-in-out;
+}
+
+#video {
+	height: 100vh !important;
+}
+
+#video video {
+	object-fit: cover !important;
+	height: 100vh !important;
+}
+
+.sticky + #video {
+	padding-top: 71.99px;
+	transition: padding-top 0.3s ease-in-out;
+}
+
+.read-more {
+	padding: 20px;
+	border: 1px solid var(--primary);
+	display: inline;
+	max-width: 420px;
+	margin: 50px 0 -50px 0;
+	text-align: center;
+	color: white;
+	background: linear-gradient(to right, #d16f0c, #e5a80e);
+	clip-path: polygon(6% 10%, 100% 10%, 95% 90%, 0 90%);
+	transition: background 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.read-more:hover {
+	background: linear-gradient(to right, lightblue, white);
+	box-shadow: 0px 0px 0 0 var(--primary);
+	color: var(--primary);
+	transition: background 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+
+#header-description {
+	background-color: rgba(255,255,255,0.2);
+	backdrop-filter: blur(3px);
+	border-radius: 10px;
+}
+
+
+
+/* MOBILE NAVBAR */
+
+#burger-menu {
+	display: none !important;
+}
+
+@media (max-width: 1090px) {
+	ul.navmenu {
+		display: none !important;
+	}
+
+	#burger-menu {
+		display: initial !important;
+	}
+}
+
+#navbar-mobile {
+	right: 30px;
+	top: 30px;
+}
+
+#burger-menu {
+	z-index: 2;
+}
+
+#burger-menu:hover {
+	cursor: pointer;
+}
+
+
+#burger-menu .line {
+	height: 4px !important;
+	width: 32px !important;
+	transform-origin: 0% 50% !important;
+}
+
+#burger-menu .line:nth-of-type(1).inactive, #burger-menu .line:nth-of-type(3).inactive {
+	transform: rotate(0deg);
+	transition: transform 0.3s ease-in-out;
+}
+
+#burger-menu .line:nth-of-type(2).inactive {
+	opacity: 100%;
+	transform: scale(1);
+	transform-origin: 50% 50% !important;
+	transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+#burger-menu .line:nth-of-type(1).active {
+	transform: rotate(45deg);
+	width: 30px !important;
+	transition: transform 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+#burger-menu .line:nth-of-type(3).active {
+	transform: rotate(-45deg);
+	width: 30px !important;
+	transition: transform 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+
+#burger-menu .line:nth-of-type(2).active {
+	transform: scale(0);
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+
+
+/* SCROLL TO TOP */
+
+#scroll-top {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	width: 60px;
+	height: 60px;
+	background-color:var(--primary);
+	border-radius: 50%;
+	border: 1px solid var(--primary);
+	background-image: url('images/back_to_top.png');background-repeat: no-repeat;
+	background-position: center;
+	z-index: 1500;
+	box-shadow: 3px 4px 5px 0 rgba(0, 0, 0, 0.2);
+	transition: background 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+#scroll-top:hover {
+	background-color: #0e3259;
+	border-color: var(--primary);
+	transition: background 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+#headtitles > div > div.col-6.sm-col-12 {
+	padding-left: 80px !important;
+}
+
+@media (max-width: 1090px) {
+	#headtitles > div {
+		flex-direction: column;
+	}
+
+	#headtitles > div > div.col-6.d-flex.flex-column.align-items-center {
+		padding: 0 !important;
+		width: 90%;
+	}
+
+	#headtitles > div > div.col-6.ps-5 {
+		width: 90% !important;
+		padding: 0 !important;
+		margin-bottom: 50px !important;
+	}
+
+	#headtitles > div > div.col-6.sm-col-12 {
+		padding-left: 0px !important;
+		margin-bottom: 50px;
+		width: 90%;
+	}
+}
