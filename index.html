@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="./images/favicon.png" rel="icon" type="image/x-icon" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>C.CAGE - Corfu Culture in AR</title>
@@ -27,28 +27,45 @@
         <div id="navbar" class="wrap nav-wrap w-100 top-0 position-absolute" style="z-index:1;">
             <div class="container-fluid">
                 <div class="row">
-                    <nav class="col-12 bg-transparent d-md-flex align-items-center justify-content-between">
-                        <a id="logo" href="#" class="d-inline"><img src="./images/logo.png" alt="C.CAGE - Corfu Culture in AR"></a>
+                    <nav class="col-12 bg-transparent d-flex align-items-center justify-content-between">
+                        <a id="logo" href="" class="d-inline"><img src="./images/logo.png" alt="C.CAGE - Corfu Culture in AR"></a>
                         <ul class="navmenu list-unstyled d-inline d-inline-flex justify-content-evenly me-5">
-                            <li class="d-inline-flex"><a href="#" class="p-4 fs-5 fw-bold text-uppercase fromLeft">ΑΡΧΙΚΗ</a></li>
-                            <li class="d-inline-flex"><a href="#" class="p-4 fs-5 fw-bold text-uppercase fromLeft">ΠΕΡΙΓΡΑΦΗ</a></li>
-                            <li class="d-inline-flex"><a href="#" class="p-4 fs-5 fw-bold text-uppercase fromLeft">ΣΥΛΛΟΓΗ</a></li>                            
-                            <li class="d-inline-flex"><a href="#" class="p-4 fs-5 fw-bold text-uppercase fromLeft">ΠΑΙΞΤΕ ΤΩΡΑ</a></li>                        
+                            <li class="d-inline-flex"><a id="home" href="#home" class="p-4 fs-5 fw-bold text-uppercase fromLeft">ΑΡΧΙΚΗ</a></li>
+                            <li class="d-inline-flex"><a id="about"href="#about" class="p-4 fs-5 fw-bold text-uppercase fromLeft">ΠΕΡΙΓΡΑΦΗ</a></li>
+                            <li class="d-inline-flex"><a id="gallery"href="#gallery" class="p-4 fs-5 fw-bold text-uppercase fromLeft">ΣΥΛΛΟΓΗ</a></li>                            
+                            <li class="d-inline-flex"><a id="play-now"href="#play-now" class="p-4 fs-5 fw-bold text-uppercase fromLeft">ΠΑΙΞΤΕ ΤΩΡΑ</a></li>                        
                         </ul>
                         
                         <div id="burger-menu" class="d-flex flex-column justify-content-between" style="height: 25px; width: 32px;">
                             <div class="line bg-white inactive"></div>
                             <div class="line bg-white inactive"></div>
                             <div class="line bg-white inactive"></div>
-                        </div>
+                        </div>                        
                     </nav>
                 </div>
-            </div>
-            
+            </div>            
         </div>
 
-        <!-- <div id="navbar-mobile" class="wrap d-inline-block position-absolute" style="height: 32px; width: 32px; z-index: 2;">
-        </div> -->
+        <div id="mobile-navbar" class="position-absolute top-0 start-0 d-flex flex-column align-items-center justify-content-start inactive">
+            <a id="logo" href="" class="d-inline mt-4"><img class="me-1" src="./images/logo-draft.png" alt="C.CAGE - Corfu Culture in AR"></a>
+            <ul id="mobile-navmenu" class="list-unstyled d-inline-flex flex-column justify-content-evenly me-5 mt-5">
+                <li class="d-inline-flex">
+                    <a href="#home" class="p-3 fs-5 fw-bold text-uppercase fromLeft">ΑΡΧΙΚΗ</a>
+                </li>
+
+                <li class="d-inline-flex">
+                    <a href="#about" class="p-3 fs-5 fw-bold text-uppercase fromLeft">ΠΕΡΙΓΡΑΦΗ</a>
+                </li>
+
+                <li class="d-inline-flex">
+                    <a href="#gallery" class="p-3 fs-5 fw-bold text-uppercase fromLeft">ΣΥΛΛΟΓΗ</a>
+                </li>
+
+                <li class="d-inline-flex">
+                    <a href="#play-now" class="p-3 fs-5 fw-bold text-uppercase fromLeft">ΠΑΙΞΤΕ ΤΩΡΑ</a>
+                </li>
+            </ul>
+        </div>
     
         <div id="video" class="wrap header-wrap position-relative d-flex align-items-center top-0">
             <div class="container-fluid px-0 position-absolute">
@@ -77,20 +94,21 @@
     </header>
 
 
-    <div class="container px-0">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero laboriosam quod tenetur reiciendis magni porro praesentium repellat omnis, odio laudantium placeat ex iure fugit quibusdam aperiam cum! Voluptas, totam cumque.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero laboriosam quod tenetur reiciendis magni porro praesentium repellat omnis, odio laudantium placeat ex iure fugit quibusdam aperiam cum! Voluptas, totam cumque.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero laboriosam quod tenetur reiciendis magni porro praesentium repellat omnis, odio laudantium placeat ex iure fugit quibusdam aperiam cum! Voluptas, totam cumque.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero laboriosam quod tenetur reiciendis magni porro praesentium repellat omnis, odio laudantium placeat ex iure fugit quibusdam aperiam cum! Voluptas, totam cumque.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero laboriosam quod tenetur reiciendis magni porro praesentium repellat omnis, odio laudantium placeat ex iure fugit quibusdam aperiam cum! Voluptas, totam cumque.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero laboriosam quod tenetur reiciendis magni porro praesentium repellat omnis, odio laudantium placeat ex iure fugit quibusdam aperiam cum! Voluptas, totam cumque.</p>
+    <div class="container px-0" style="height: 800px;">
+        <div class="wrap">
+            <div class="row">
+                <div class="col-4 w-100 h-100 bg-danger"></div>
+                <div class="col-4 w-100 h-100 bg-danger"></div>
+                <div class="col-4 w-100 h-100 bg-danger"></div>
+            </div>
+        </div>
     </div>
 
 
     
     
+    
 	<a href="#top" id="scroll-top" class="scroller tp" title="TOP"></a>
-
     <script src="./app.js"></script>
 </body>
 </html>
