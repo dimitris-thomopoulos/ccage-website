@@ -472,7 +472,7 @@ ul.navmenu li a.fromLeft::after {
 @media (min-width: 992px) {
 	
 	#info-section {
-		height: 800px;
+		height: 600px;
 	}
 
 	.icon-info {
