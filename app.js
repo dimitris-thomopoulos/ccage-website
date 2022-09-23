@@ -31,6 +31,8 @@ window.onscroll = function() {myFunction()};
 // Get the navbar
 var navbar = document.getElementById("navbar");
 
+var scrollToTop = document.getElementById("scroll-top");
+
 // Get the offset position of the navbar
 var sticky = navbar.offsetTop;
 
@@ -47,6 +49,9 @@ function myFunction() {
     mobileNavbar.classList.add("sticky");
     mobileNavbar.classList.remove("position-absolute");
 
+    scrollToTop.classList.remove("inactive");
+    scrollToTop.classList.add("active");
+
     // for (let i=0; i<navbarLinks.length; i++) {
     //     navbarLinks[i].classList.add("sticky");
     // };
@@ -57,6 +62,9 @@ function myFunction() {
 
     mobileNavbar.classList.remove("sticky");
     mobileNavbar.classList.add("position-absolute");
+
+    scrollToTop.classList.add("inactive");
+    scrollToTop.classList.remove("active");
 
     // for (let i=0; i<navbarLinks.length; i++) {
     //     navbarLinks[i].classList.remove("sticky");
