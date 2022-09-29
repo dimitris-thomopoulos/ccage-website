@@ -5,7 +5,7 @@ var line1 = document.querySelector('#burger-menu .line:nth-of-type(1)');
 var line2 = document.querySelector('#burger-menu .line:nth-of-type(2)');
 var line3 = document.querySelector('#burger-menu .line:nth-of-type(3)');
 
-var mobileNavbar = document.getElementById("mobile-navbar");
+var mobileNavbar = document.getElementById("mobile-menu");
 
 burgerMenu.addEventListener('click', () => {
 
@@ -29,7 +29,7 @@ burgerMenu.addEventListener('click', () => {
 window.onscroll = function() {myFunction()};
 
 // Get the navbar
-var navbar = document.getElementById("navbar");
+var navbar = document.getElementById("menu");
 
 var scrollToTop = document.getElementById("scroll-top");
 

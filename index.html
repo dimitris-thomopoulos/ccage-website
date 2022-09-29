@@ -6,34 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>C.CAGE - Corfu Culture in AR</title>
-    <link type="text/css" href="styles.css" rel="stylesheet" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;700&display=swap" rel="stylesheet">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link type="text/css" href="https://commons.ionio.gr/commons/inclusive/css_frontend_inclusive_b42.css" rel="stylesheet" />
+    
     <script src="https://commons.ionio.gr/commons/inclusive/js_frontend_inclusive.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    <link type="text/css" href="https://commons.ionio.gr/commons/inclusive/css_frontend_inclusive_b42.css" rel="stylesheet" />
+    <link type="text/css" href="styles.css" rel="stylesheet"/>
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+
 </head>
 
 <body id="top">
 
     <header>
-        <div id="navbar" class="wrap nav-wrap w-100 top-0 position-absolute" style="z-index:1;">
+        <div id="menu" class="wrap nav-wrap w-100 top-0 position-absolute" style="z-index:1;">
             <div class="container-fluid">
                 <div class="row">
                     <nav class="col-12 bg-transparent d-flex align-items-center justify-content-between">
                         <a id="logo" href="" class="d-inline"><img src="./images/logo.png" alt="C.CAGE - Corfu Culture in AR"></a>
-                        <ul class="navmenu list-unstyled d-inline d-inline-flex justify-content-evenly me-5">
-                            <li class="d-inline-flex"><a id="home" href="#home" class="p-4 fs-5 fw-bold text-uppercase fromLeft">ΑΡΧΙΚΗ</a></li>
-                            <li class="d-inline-flex"><a id="about"href="#about" class="p-4 fs-5 fw-bold text-uppercase fromLeft">ΠΕΡΙΓΡΑΦΗ</a></li>
-                            <li class="d-inline-flex"><a id="gallery"href="#gallery" class="p-4 fs-5 fw-bold text-uppercase fromLeft">ΣΥΛΛΟΓΗ</a></li>                            
-                            <li class="d-inline-flex"><a id="play-now"href="#play-now" class="p-4 fs-5 fw-bold text-uppercase fromLeft">ΠΑΙΞΤΕ ΤΩΡΑ</a></li>                        
+                        <ul class="navmenu list-unstyled d-inline d-inline-flex justify-content-evenly mb-0 me-5">
+                            <li class="menu-item d-inline-flex"><a id="home" href="#home" class="menu-link p-4 fs-5 fw-bold text-uppercase fromLeft">ΑΡΧΙΚΗ</a></li>
+                            <li class="menu-item d-inline-flex"><a id="about"href="#about" class="menu-link p-4 fs-5 fw-bold text-uppercase fromLeft">ΠΕΡΙΓΡΑΦΗ</a></li>
+                            <li class="menu-item d-inline-flex"><a id="gallery"href="#gallery" class="menu-link p-4 fs-5 fw-bold text-uppercase fromLeft">ΣΥΛΛΟΓΗ</a></li>                            
+                            <li class="menu-item d-inline-flex"><a id="play-now"href="#play-now" class="menu-link p-4 fs-5 fw-bold text-uppercase fromLeft">ΠΑΙΞΤΕ ΤΩΡΑ</a></li>                        
                         </ul>
                         
                         <div id="burger-menu" class="d-flex flex-column justify-content-between" style="height: 25px; width: 32px;">
@@ -46,23 +49,23 @@
             </div>            
         </div>
 
-        <div id="mobile-navbar" class="position-absolute top-0 start-0 d-flex flex-column align-items-center justify-content-start inactive">
+        <div id="mobile-menu" class="position-absolute top-0 start-0 d-flex flex-column align-items-center justify-content-start inactive">
             <a id="logo" href="" class="d-inline mt-4"><img class="me-1" src="./images/logo-draft.png" alt="C.CAGE - Corfu Culture in AR"></a>
-            <ul id="mobile-navmenu" class="list-unstyled d-inline-flex flex-column justify-content-evenly me-5 mt-5">
-                <li class="d-inline-flex">
-                    <a href="#home" class="p-3 fs-5 fw-bold text-uppercase fromLeft">ΑΡΧΙΚΗ</a>
+            <ul id="mobile-menu-items" class="list-unstyled d-inline-flex flex-column justify-content-evenly me-5 mt-5">
+                <li class="menu-item d-inline-flex">
+                    <a href="#home" class="menu-link p-3 fs-5 fw-bold text-uppercase fromLeft">ΑΡΧΙΚΗ</a>
                 </li>
 
-                <li class="d-inline-flex">
-                    <a href="#about" class="p-3 fs-5 fw-bold text-uppercase fromLeft">ΠΕΡΙΓΡΑΦΗ</a>
+                <li class="menu-item d-inline-flex">
+                    <a href="#about" class="menu-link p-3 fs-5 fw-bold text-uppercase fromLeft">ΠΕΡΙΓΡΑΦΗ</a>
                 </li>
 
-                <li class="d-inline-flex">
-                    <a href="#gallery" class="p-3 fs-5 fw-bold text-uppercase fromLeft">ΣΥΛΛΟΓΗ</a>
+                <li class="menu-item d-inline-flex">
+                    <a href="#gallery" class="menu-link p-3 fs-5 fw-bold text-uppercase fromLeft">ΣΥΛΛΟΓΗ</a>
                 </li>
 
-                <li class="d-inline-flex">
-                    <a href="#play-now" class="p-3 fs-5 fw-bold text-uppercase fromLeft">ΠΑΙΞΤΕ ΤΩΡΑ</a>
+                <li class="menu-item d-inline-flex">
+                    <a href="#play-now" class="menu-link p-3 fs-5 fw-bold text-uppercase fromLeft">ΠΑΙΞΤΕ ΤΩΡΑ</a>
                 </li>
             </ul>
         </div>
@@ -124,7 +127,7 @@
         </div>
     </div>
 
-    <div id="button-section" class="container-fluid p-3 p-md-5 mt-5 mt-md-0">
+    <div id="about-section" class="container-fluid p-3 p-md-5 mt-5 mt-md-0">
         <div class="wrap w-100 d-flex flex-column justify-content-between align-items-center">
             <h2 class="fs-1 fw-bold text-white text-center py-0 mt-5 mt-md-3">ΣΧΕΤΙΚΑ ΜΕ ΤΟ ΠΑΙΧΝΙΔΙ</h2>
             <div class="row w-100 h-100 mt-5 pt-0 pt-md-5 d-flex align-items-center flex-md-row justify-content-center">
@@ -145,9 +148,88 @@
     </div>
 
 
-    <div id="gallery-section" class="container-fluid p-3 p-md-5 mt-5 mt-md-0">
-    
+    <div id="posts-section" class="container-fluid p-3 p-md-5 mt-5 mt-md-0">
+        <div class="wrap w-100 d-flex flex-column justify-content-between align-items-center">
+            <h2 class="fs-1 fw-bold text-center py-0 mt-0 mt-md-3">ΠΡΟΣΦΑΤΑ ΝΕΑ</h2>
+            <div class="row w-100 h-100 mt-5 pt-0 pt-md-5 d-flex align-items-center flex-md-row justify-content-center">
+                <div class="post col-12 col-md-3 my-3 my-md-0 mx-2 py-0 py-md-0 gx-0 w-10 h-md-100 d-flex flex-column align-items-center bg-light rounded overflow-hidden">
+
+                    <a href="#">
+                        <img class="w-100 rounded" src="./images/gallery/gallery1.jpg" alt="">
+                    </a>
+
+                    <h3 class="pt-4 pb-4"><a class="fw-bold text-dark" href="#">Νέα αναβάθμιση</a></h3>
+                    <p class="post-description px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eos eligendi pariatur magnam, expedita veritatis fuga laborum ab. Possimus corrupti placeat illum architecto, hic quam enim! Accusantium dolor sint ratione.
+                    Minus magnam officia blanditiis qui fugiat nesciunt saepe harum modi minima rerum accusantium, porro, perspiciatis asperiores iste nulla illum omnis sunt quis quia praesentium. Incidunt illum nisi adipisci voluptatum non.</p>
+                </div>
+
+                <div class="post col-12 col-md-3 my-3 my-md-0 mx-2 py-0 py-md-0 gx-0 w-10 h-md-100 d-flex flex-column align-items-center bg-light rounded overflow-hidden">
+
+                    <a href="#">
+                        <img class="w-100 rounded" src="./images/gallery/gallery1.jpg" alt="">
+                    </a>
+                    
+                    <h3 class="pt-4 pb-4"><a class="fw-bold text-dark" href="#">Beta testing</a></h3>
+                    <p class="post-description px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eos eligendi pariatur magnam, expedita veritatis fuga laborum ab. Possimus corrupti placeat illum architecto, hic quam enim! Accusantium dolor sint ratione.
+                    Minus magnam officia blanditiis qui fugiat nesciunt saepe harum modi minima rerum accusantium, porro, perspiciatis asperiores iste nulla illum omnis sunt quis quia praesentium. Incidunt illum nisi adipisci voluptatum non.</p>
+                </div>
+
+                <div class="post col-12 col-md-3 my-3 my-md-0 mx-2 py-0 py-md-0 gx-0 w-10 h-md-100 d-flex flex-column align-items-center bg-light rounded overflow-hidden">
+
+                    <a href="#">
+                        <img class="w-100 rounded" src="./images/gallery/gallery1.jpg" alt="">
+                    </a>
+
+                    <h3 class="pt-4 pb-4"><a class="fw-bold text-dark" href="#">Ανακοίνωση</a></h3>
+                    <p class="post-description px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eos eligendi pariatur magnam, expedita veritatis fuga laborum ab. Possimus corrupti placeat illum architecto, hic quam enim! Accusantium dolor sint ratione.
+                    Minus magnam officia blanditiis qui fugiat nesciunt saepe harum modi minima rerum accusantium, porro, perspiciatis asperiores iste nulla illum omnis sunt quis quia praesentium. Incidunt illum nisi adipisci voluptatum non.</p>
+                </div>
+
+                <div class="col-12 col-md-4 my-3 my-md-0 mx-1 py-0 py-md-0 gx-0 w-10 h-md-100 d-flex flex-column align-items-center">
+                    <a href="#" class="fw-bold fs-6 read-more-3">ΔΕΙΤΕ ΠΕΡΙΣΣΟΤΕΡΑ</a>
+                </div>
+
+
+            </div>
+        </div>
     </div>
+
+
+    <div id="gallery-section" class="container-fluid bg-warning p-3 p-md-5 mt-5 mt-md-0">
+        <div class="wrap w-100 d-flex flex-column justify-content-between align-items-center">
+            <h2 class="fs-1 fw-bold text-center py-0 mt-0 mt-md-3">ΣΥΛΛΟΓΗ</h2>
+            <div class="row w-100 h-100 mt-5 pt-0 pt-md-5 d-flex align-items-center flex-md-row justify-content-center">
+                <div class="col-12 col-md-4 my-3 my-md-0 py-0 py-md-0 gx-0 gx-md-2 w-10 h-md-100">
+                    <img class="w-100 rounded" data-fancybox="images" href="./images/gallery/gallery1.jpg" src="./images/gallery/gallery1.jpg" alt="">
+                </div>
+
+                <div class="col-12 col-md-4 my-3 my-md-3 py-0 py-md-0 gx-0 gx-md-2 w-10 h-md-100">
+                    <img class="w-100 rounded" data-fancybox="images" href="./images/gallery/gallery2.jpg" src="./images/gallery/gallery2.jpg" alt="">
+                </div>
+
+                <div class="col-12 col-md-4 my-3 my-md-3 py-0 py-md-0 gx-0 gx-md-2 w-10 h-md-100">
+                    <img class="w-100 rounded" data-fancybox="images" href="./images/gallery/gallery3.jpg" src="./images/gallery/gallery3.jpg" alt="">
+                </div>
+
+                <div class="col-12 col-md-4 my-3 my-md-3 py-0 py-md-0 gx-0 gx-md-2 w-10 h-md-100">
+                    <img class="w-100 rounded" data-fancybox="images" href="./images/gallery/gallery1.jpg" src="./images/gallery/gallery1.jpg" alt="">
+                </div>
+
+                <div class="col-12 col-md-4 my-3 my-md-3 py-0 py-md-0 gx-0 gx-md-2 w-10 h-md-100">
+                    <img class="w-100 rounded" data-fancybox="images" href="./images/gallery/gallery2.jpg" src="./images/gallery/gallery2.jpg" alt="">
+                </div>
+
+                <div class="col-12 col-md-4 my-3 my-md-3 py-0 py-md-0 gx-0 gx-md-2 w-10 h-md-100">
+                    <img class="w-100 rounded" data-fancybox="images" href="./images/gallery/gallery3.jpg" src="./images/gallery/gallery3.jpg" alt="">
+                </div>
+                
+                <a href="#" class="fw-bold fs-6 read-more-4">ΔΕΙΤΕ ΠΕΡΙΣΣΟΤΕΡΑ</a>
+
+            </div>
+        </div>
+        
+    </div>
+
 
 
     
