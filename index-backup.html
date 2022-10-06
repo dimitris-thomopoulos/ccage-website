@@ -12,20 +12,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;700&display=swap" rel="stylesheet">
     
-    <link type="text/css" href="https://commons.ionio.gr/commons/inclusive/css_frontend_inclusive_b42.css" rel="stylesheet" />
-    <link type="text/css" href="styles.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link type="text/css" href="styles-backup.css" rel="stylesheet"/>
     
     <script src="https://commons.ionio.gr/commons/inclusive/js_frontend_inclusive.js"></script>
-    
+
 </head>
 
 <body id="top">
 
     <header>
-        <div id="menu" class="nav-wrap w-100 top-0 position-absolute" style="z-index:1;">
+        <div id="menu" class="wrap nav-wrap w-100 top-0 position-absolute" style="z-index:1;">
             <div class="container-fluid">
                 <div class="row">
-                    <nav class="col-lg-12 bg-transparent d-flex align-items-center justify-content-between">
+                    <nav class="col-12 bg-transparent d-flex align-items-center justify-content-between">
                         <a id="logo" href="" class="d-inline"><img src="./images/logo.png" alt="C.CAGE - Corfu Culture in AR"></a>
                         <ul class="navmenu list-unstyled d-inline d-inline-flex justify-content-evenly mb-0 me-5">
                             <li class="menu-item d-inline-flex"><a id="home" href="#home" class="menu-link p-4 fs-5 fw-bold text-uppercase fromLeft">ΑΡΧΙΚΗ</a></li>
@@ -38,14 +38,14 @@
                             <div class="line bg-white inactive"></div>
                             <div class="line bg-white inactive"></div>
                             <div class="line bg-white inactive"></div>
-                        </div>
+                        </div>                        
                     </nav>
                 </div>
-            </div>
+            </div>            
         </div>
 
         <div id="mobile-menu" class="position-absolute top-0 start-0 d-flex flex-column align-items-center justify-content-start inactive">
-            <a id="logo" href="" class="d-inline mt-4" style="margin: 30px 0 50px 0;"><img class="me-1" src="./images/logo-draft.png" alt="C.CAGE - Corfu Culture in AR"></a>
+            <a id="logo" href="" class="d-inline mt-4"><img class="me-1" src="./images/logo-draft.png" alt="C.CAGE - Corfu Culture in AR"></a>
             <ul id="mobile-menu-items" class="list-unstyled d-inline-flex flex-column justify-content-evenly me-5 mt-5">
                 <li class="menu-item d-inline-flex">
                     <a href="#home" class="menu-link p-3 fs-5 fw-bold text-uppercase fromLeft">ΑΡΧΙΚΗ</a>
@@ -73,14 +73,14 @@
             </div>
 
 
-            <div id="headtitles" class="container-fluid position-relative d-flex align-items-center" style="height: 600px;">
+            <div id="headtitles" class="container-fluid position-relative d-flex align-items-center mt-80" style="height: 600px;">
                 <div class="row d-flex align-items-center">
-                    <div class="col-xs-12 col-6">
-                        <h1 class="text-white fs-1 fw-bold" style="font-size: 42px; line-height: 1.2;">Γνωρίστε την Πολιτιστική Κληρονομιά της Κέρκυρας.</h1>
+                    <div class="col-6 sm-col-12">
+                        <h1 class="text-white fs-1 fw-bold" style="font-size: 42px;">Γνωρίστε την Πολιτιστική Κληρονομιά της Κέρκυρας.</h1>
                     </div>
                     
-                    <div class="col-xs-12 col-sm-6 d-flex flex-column align-items-center" style="padding: 0 100px;">
-                        <p id="header-description" class="t-justify" style="padding: 20px 25px; line-height: 1.5;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et facere qui iusto quibusdam consequuntur illo eveniet, dolores in voluptatem, tenetur non voluptatum aut? Laboriosam vitae doloribus amet quidem nihil corporis. Et facere qui iusto quibusdam co iusto quibusdam co iustois. Et facere qui iusto quibusdam co iusto.</p>
+                    <div class="col-6 d-flex flex-column align-items-center" style="padding: 0 100px;">
+                        <p id="header-description" class="t-justify" style="padding: 20px 25px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et facere qui iusto quibusdam consequuntur illo eveniet, dolores in voluptatem, tenetur non voluptatum aut? Laboriosam vitae doloribus amet quidem nihil corporis. Et facere qui iusto quibusdam co iusto quibusdam co iustois. Et facere qui iusto quibusdam co iusto.</p>
                         
                         <a href="#" class="fw-bold fs-5 read-more">ΔΕΙΤΕ ΠΕΡΙΣΣΟΤΕΡΑ</a>
 
@@ -93,48 +93,49 @@
 
 
     <div id="info-section" class="container p-3 p-md-5 mt-5 mt-md-0">
-        <div class="w-100 h-100 d-flex justify-content-center">
-            <div id="info" class="row w-100 h-100 d-flex align-items-center flex-column flex-md-row justify-content-evenly ">
-                <div class="col-xs-12 my-0 py-2 py-md-0 px-1 icon-info d-flex justify-content-center align-items-center flex-column">
+        <div class="wrap w-100 h-100 d-flex justify-content-center">
+            <div id="info" class="row w-100 h-100 d-flex align-items-center flex-md-row justify-content-evenly ">
+                <div class="col-12 col-md-4 my-0 py-2 py-md-0 px-1 icon-info gx-0 gx-md-5 d-flex justify-content-center align-items-center flex-column">
                     <img class="mb-3" src="./svgs/town-hall-icon.svg" style="width: 100px;" alt="">
 
                     <h2 class="fs-4 fw-bold text-uppercase mb-5">περιηγηση</h2>
 
-                    <p class="px-0">Lorem ipsum dolor sit amet eluran sio norem cultum consectetur adipisicing elit. Doloribus eveniet cumque minima magni nemo facilis eius error quis sint dignissi, moscumque minima magni nemo facilis eius error quis sint peregum.</p>
+                    <p class="px-0 px-md-4">Lorem ipsum dolor sit amet eluran sio consectetur adipisicing elit. Doloribus eveniet cumque minima magni nemo facilis eius error quis sint dignissimos.</p>
                 </div>
 
-                <div class="col-xs-12 my-0 py-2 py-md-0 px-1 icon-info d-flex justify-content-center align-items-center flex-column">
+                <div class="col-12 col-md-4 my-0 py-2 py-md-0 px-1 icon-info gx-0 gx-md-5 d-flex justify-content-center align-items-center flex-column">
                     <img class="mb-3" src="./svgs/smartphone.svg" style=" width: 100px;" alt="">
 
                     <h2 class="fs-4 fw-bold text-uppercase mb-5">φορητοτητα</h2>
 
-                    <p class="px-0">Lorem ipsum dolor sit amet eluran sio norem cultum consectetur adipisicing elit. Doloribus eveniet cumque minima magni nemo facilis eius error quis sint dignissi, moscumque minima magni nemo facilis eius error quis sint peregum.</p>
+                    <p class="px-0 px-md-4">Lorem ipsum dolor sit amet eluran sio consectetur adipisicing elit. Doloribus eveniet cumque minima magni nemo facilis eius error quis sint dignissimos.</p>
                 </div>
 
-                <div class="col-xs-12 my-0 py-2 py-md-0 px-1 icon-info d-flex justify-content-center align-items-center flex-column">
+                <div class="col-12 col-md-4 my-0 py-2 py-md-0 px-1 gx-0 gx-md-5 d-flex justify-content-center align-items-center flex-column">
                     <img class="mb-3" src="./svgs/ar.svg" style="width: 100px;" alt="">
 
                     <h2 class="fs-4 fw-bold text-uppercase mb-5">τεχνολογια ar</h2>
 
-                    <p class="px-0">Lorem ipsum dolor sit amet eluran sio norem cultum consectetur adipisicing elit. Doloribus eveniet cumque minima magni nemo facilis eius error quis sint dignissi, moscumque minima magni nemo facilis eius error quis sint peregum.</p>
+                    <p class="px-0 px-md-4">Lorem ipsum dolor sit amet eluran sio consectetur adipisicing elit. Doloribus eveniet cumque minima magni nemo facilis eius error quis sint dignissimos.</p>
                 </div>
             </div>
         </div>
     </div>
 
     <div id="about-section" class="container-fluid p-3 p-md-5 mt-5 mt-md-0">
-        <div class="w-100 d-flex flex-column justify-content-between align-items-center">
-            <h2 class="fs-1 fs-xs-3 fw-bold text-white text-center py-0 mt-5 mt-md-3">ΣΧΕΤΙΚΑ ΜΕ ΤΟ ΠΑΙΧΝΙΔΙ</h2>
-            <div class="row w-100 h-100 mt-5 pt-0 pt-md-5 d-flex align-items-center flex-column flex-md-row justify-content-evenly">
-                
-                <div class="col-xs-12 col-md-6 order-1 order-md-0 my-5 my-md-0 py-2 py-md-0 gx-0 gx-md-5 d-flex flex-column justify-content-center align-items-center">
+        <div class="wrap w-100 d-flex flex-column justify-content-between align-items-center">
+            <h2 class="fs-1 fw-bold text-white text-center py-0 mt-5 mt-md-3">ΣΧΕΤΙΚΑ ΜΕ ΤΟ ΠΑΙΧΝΙΔΙ</h2>
+            <div class="row w-100 h-100 mt-5 pt-0 pt-md-5 d-flex align-items-center flex-md-row justify-content-center">
+                <div class="col-12 col-md-6 order-1 order-md-0 my-5 my-md-0 py-2 py-md-0 gx-0 gx-md-5 d-flex flex-column justify-content-center align-items-center h-md-100">
                     <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, animi voluptate quidem quasi similique enim voluptates beatae, harum deleniti vel assumenda! Blanditiis esse numquam dignissimos animi? Perspiciatis nesciunt porro esses debitis.milique enim voluptates beatae, harum deleniti vel assumenda! Blanditiis numquam dignissimos animi? Perspiciatis nesciunt porro debitis.milique enim voluptates beatae, harum deleniti vel assumenda! Blanditiis esse numquam dignissimos animi? Perspiciatis nesciunt porro debitis.</p>
                     
                     <a href="#" class="fw-bold fs-6 read-more-2">ΔΕΙΤΕ ΠΕΡΙΣΣΟΤΕΡΑ</a>
+
+
                 </div>
 
-                <div class="col-xs-12 col-md-6 order-0 order-md-1 my-0 my-md-0 py-2 py-md-0 gx-0 gx-md-5 d-flex flex-column justify-content-center align-items-center">                    
-                    <img src="./images/castle-smartphone.jpg">                    
+                <div class="col-12 col-md-6 order-0 order-md-1 my-0 my-md-0 py-2 py-md-0 gx-0 gx-md-5 d-flex flex-column justify-content-center align-items-center h-md-100">                    
+                    <img src="./images/castle-smartphone.jpg">                   
                 </div>
 
             </div>
@@ -142,105 +143,87 @@
     </div>
 
 
-    <div id="posts-section" class="container-fluid p-xs-3 p-md-5 mt-0">
-        <div class="w-100 mt-5 d-flex flex-column justify-content-between align-items-center">
-            <h2 class="fs-1 fs-xs-3 fw-bold text-center py-0 mt-0 mt-md-3">ΠΡΟΣΦΑΤΑ ΝΕΑ</h2>
-            <div class="row w-100 h-100 mt-5 pt-0 pt-md-5 d-flex align-items-center flex-column flex-md-row justify-content-center">
-                <div class="post col-xs-12 col-md-3 my-3 my-md-0 mx-2 py-0 py-md-0 d-flex flex-column align-items-center bg-light rounded overflow-hidden">
+    <div id="posts-section" class="container-fluid p-3 p-md-5 mt-5 mt-md-0">
+        <div class="wrap w-100 d-flex flex-column justify-content-between align-items-center">
+            <h2 class="fs-1 fw-bold text-center py-0 mt-0 mt-md-3">ΠΡΟΣΦΑΤΑ ΝΕΑ</h2>
+            <div class="row w-100 h-100 mt-5 pt-0 pt-md-5 d-flex align-items-center flex-md-row justify-content-center">
+                <div class="post col-12 col-md-3 my-3 my-md-0 mx-2 py-0 py-md-0 gx-0 w-10 h-md-100 d-flex flex-column align-items-center bg-light rounded overflow-hidden">
 
                     <a href="#">
                         <img class="w-100 rounded" src="./images/gallery/gallery1.jpg" alt="">
                     </a>
 
-                    <h3 class="post-title pt-4 pb-4"><a class="fw-bold fs-sm-4 fs-xs-4 text-primary" href="#">Νέα αναβάθμιση</a></h3>
-                    <p class="post-description px-4 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eos eligendi pariatur magnam, expedita veritatis fuga laborum ab. Possimus corrupti placeat illum architecto, hic quam enim! Accusantium dolor sint ratione.
+                    <h3 class="pt-4 pb-4"><a class="fw-bold text-dark" href="#">Νέα αναβάθμιση</a></h3>
+                    <p class="post-description px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eos eligendi pariatur magnam, expedita veritatis fuga laborum ab. Possimus corrupti placeat illum architecto, hic quam enim! Accusantium dolor sint ratione.
                     Minus magnam officia blanditiis qui fugiat nesciunt saepe harum modi minima rerum accusantium, porro, perspiciatis asperiores iste nulla illum omnis sunt quis quia praesentium. Incidunt illum nisi adipisci voluptatum non.</p>
                 </div>
 
-                <div class="post col-12 col-md-3 my-3 my-md-0 mx-2 py-0 py-md-0 d-flex flex-column align-items-center bg-light rounded overflow-hidden">
+                <div class="post col-12 col-md-3 my-3 my-md-0 mx-2 py-0 py-md-0 gx-0 w-10 h-md-100 d-flex flex-column align-items-center bg-light rounded overflow-hidden">
 
                     <a href="#">
                         <img class="w-100 rounded" src="./images/gallery/gallery1.jpg" alt="">
                     </a>
                     
-                    <h3 class="post-title pt-4 pb-4"><a class="fw-bold fs-sm-4 fs-xs-4 text-primary" href="#">Δοκιμή μεγάλου τίτλου για άρθρο σε προεπισκόπιση για το demo</a></h3>
-                    <p class="post-description px-4 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eos eligendi pariatur magnam, expedita veritatis fuga laborum ab. Possimus corrupti placeat illum architecto, hic quam enim! Accusantium dolor sint ratione.
+                    <h3 class="pt-4 pb-4"><a class="fw-bold text-dark" href="#">Beta testing</a></h3>
+                    <p class="post-description px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eos eligendi pariatur magnam, expedita veritatis fuga laborum ab. Possimus corrupti placeat illum architecto, hic quam enim! Accusantium dolor sint ratione.
                     Minus magnam officia blanditiis qui fugiat nesciunt saepe harum modi minima rerum accusantium, porro, perspiciatis asperiores iste nulla illum omnis sunt quis quia praesentium. Incidunt illum nisi adipisci voluptatum non.</p>
                 </div>
 
-                <div class="post col-12 col-md-3 my-3 my-md-0 mx-2 py-0 py-md-0 d-flex flex-column align-items-center bg-light rounded overflow-hidden">
+                <div class="post col-12 col-md-3 my-3 my-md-0 mx-2 py-0 py-md-0 gx-0 w-10 h-md-100 d-flex flex-column align-items-center bg-light rounded overflow-hidden">
 
                     <a href="#">
                         <img class="w-100 rounded" src="./images/gallery/gallery1.jpg" alt="">
                     </a>
 
-                    <h3 class="post-title pt-4 pb-4"><a class="fw-bold fs-sm-4 fs-xs-4 text-primary" href="#">Ανακοίνωση</a></h3>
-                    <p class="post-description px-4 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eos eligendi pariatur magnam, expedita veritatis fuga laborum ab. Possimus corrupti placeat illum architecto, hic quam enim! Accusantium dolor sint ratione.
+                    <h3 class="pt-4 pb-4"><a class="fw-bold text-dark" href="#">Ανακοίνωση</a></h3>
+                    <p class="post-description px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eos eligendi pariatur magnam, expedita veritatis fuga laborum ab. Possimus corrupti placeat illum architecto, hic quam enim! Accusantium dolor sint ratione.
                     Minus magnam officia blanditiis qui fugiat nesciunt saepe harum modi minima rerum accusantium, porro, perspiciatis asperiores iste nulla illum omnis sunt quis quia praesentium. Incidunt illum nisi adipisci voluptatum non.</p>
                 </div>
 
-                
-                
-            </div>
-            
-            <div class="row col-md-4 my-3 my-md-0 mx-1 py-0 py-md-0 gx-0 w-10 h-md-100 d-flex flex-column align-items-center">
-                <a href="#" class="fw-bold fs-6 read-more-3">ΔΕΙΤΕ ΠΕΡΙΣΣΟΤΕΡΑ</a>
+                <div class="col-12 col-md-4 my-3 my-md-0 mx-1 py-0 py-md-0 gx-0 w-10 h-md-100 d-flex flex-column align-items-center">
+                    <a href="#" class="fw-bold fs-6 read-more-3">ΔΕΙΤΕ ΠΕΡΙΣΣΟΤΕΡΑ</a>
+                </div>
+
+
             </div>
         </div>
     </div>
 
 
-    <div id="gallery-section" class="container-fluid p-3 p-md-5 mt-5 pt-5 mt-md-0">
-        <div class="w-100 d-flex flex-column justify-content-between align-items-center">
-            <h2 class="fs-1 fs-xs-3 fw-bold text-center py-0 mt-0 mt-md-3">ΣΥΛΛΟΓΗ</h2>
-            <div class="row w-100 h-100 mt-5 pt-0 pt-md-5 d-flex align-items-center flex-wrap flex-md-row justify-content-center">
-                <div class="col-xs-12 col-md-4 my-3 my-md-0 py-0 py-md-0">
+    <div id="gallery-section" class="container-fluid bg-warning p-3 p-md-5 mt-5 mt-md-0">
+        <div class="wrap w-100 d-flex flex-column justify-content-between align-items-center">
+            <h2 class="fs-1 fw-bold text-center py-0 mt-0 mt-md-3">ΣΥΛΛΟΓΗ</h2>
+            <div class="row w-100 h-100 mt-5 pt-0 pt-md-5 d-flex align-items-center flex-md-row justify-content-center">
+                <div class="col-12 col-md-4 my-3 my-md-0 py-0 py-md-0 gx-0 gx-md-2 w-10 h-md-100">
                     <img class="w-100 rounded" data-fancybox="images" href="./images/gallery/gallery1.jpg" src="./images/gallery/gallery1.jpg" alt="">
                 </div>
 
-                <div class="col-xs-12 col-md-4 my-3 my-md-3 py-0 py-md-0">
+                <div class="col-12 col-md-4 my-3 my-md-3 py-0 py-md-0 gx-0 gx-md-2 w-10 h-md-100">
                     <img class="w-100 rounded" data-fancybox="images" href="./images/gallery/gallery2.jpg" src="./images/gallery/gallery2.jpg" alt="">
                 </div>
 
-                <div class="col-xs-12 col-md-4 my-3 my-md-3 py-0 py-md-0">
+                <div class="col-12 col-md-4 my-3 my-md-3 py-0 py-md-0 gx-0 gx-md-2 w-10 h-md-100">
                     <img class="w-100 rounded" data-fancybox="images" href="./images/gallery/gallery3.jpg" src="./images/gallery/gallery3.jpg" alt="">
                 </div>
 
-                <div class="col-xs-12 col-md-4 my-3 my-md-3 py-0 py-md-0">
+                <div class="col-12 col-md-4 my-3 my-md-3 py-0 py-md-0 gx-0 gx-md-2 w-10 h-md-100">
                     <img class="w-100 rounded" data-fancybox="images" href="./images/gallery/gallery1.jpg" src="./images/gallery/gallery1.jpg" alt="">
                 </div>
 
-                <div class="col-xs-12 col-md-4 my-3 my-md-3 py-0 py-md-0">
+                <div class="col-12 col-md-4 my-3 my-md-3 py-0 py-md-0 gx-0 gx-md-2 w-10 h-md-100">
                     <img class="w-100 rounded" data-fancybox="images" href="./images/gallery/gallery2.jpg" src="./images/gallery/gallery2.jpg" alt="">
                 </div>
 
-                <div class="col-xs-12 col-md-4 my-3 my-md-3 py-0 py-md-0">
+                <div class="col-12 col-md-4 my-3 my-md-3 py-0 py-md-0 gx-0 gx-md-2 w-10 h-md-100">
                     <img class="w-100 rounded" data-fancybox="images" href="./images/gallery/gallery3.jpg" src="./images/gallery/gallery3.jpg" alt="">
                 </div>
                 
-                
-            </div>
+                <a href="#" class="fw-bold fs-6 read-more-4">ΔΕΙΤΕ ΠΕΡΙΣΣΟΤΕΡΑ</a>
 
-            <a href="#" class="fw-bold fs-6 read-more-4">ΔΕΙΤΕ ΠΕΡΙΣΣΟΤΕΡΑ</a>
+            </div>
         </div>
         
     </div>
-
-
-    <div id="organisations-section" class="container-fluid p-3 p-md-5 mt-5 pt-5 mt-md-0">
-        
-        <div class="row d-flex align-items-center flex-column flex-md-row justify-content-evenly">
-            <div class="col-xs-12 col-md-6 my-3 my-md-0 py-0 py-md-0">
-                <img src="./images/castle-smartphone.jpg" style="max-width: 320px;" alt="">
-            </div>
-            <div class="col-xs-12 col-md-6 my-3 my-md-0 py-0 py-md-0">
-                <img src="./images/castle-smartphone.jpg" style="max-width: 320px;" alt="">
-            </div>
-        
-        </div>
-
-    </div>
-
 
 
 
