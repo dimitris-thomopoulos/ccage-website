@@ -810,7 +810,7 @@ ul.navmenu li a.fromLeft::after {
 	border: 1px solid var(--primary);
 	border-radius: 6px;
 	display: inline;
-	max-width: 200px !important;
+	max-width: 250px !important;
 	margin: 50px 0 -50px 0;
 	margin-top: 50px !important;
 	font-family: 'Jura' !important;
@@ -1113,16 +1113,30 @@ ul.navmenu li a.fromLeft::after {
 	#posts-section {
 		height: 800px;
 	}
+}
 
+@media (min-width: 768px) {
 	.post {
 		max-height: 498px;
 	}
 }
 
+@media (min-width: 1560px) {
+	.post {
+		max-height: 580px;
+	}
+}
+
+
 @media (min-width: 992px) {
 	#posts-section {
 		height: 1000px;
 	}
+}
+
+.post {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
 }
 
 #posts-section h2, #posts-section h3 {
@@ -1150,6 +1164,7 @@ ul.navmenu li a.fromLeft::after {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden !important;
+	line-height: 1.1;
     text-overflow: ellipsis;
 }
 
