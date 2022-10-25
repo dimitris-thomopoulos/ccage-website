@@ -1,0 +1,124 @@
+/* POSTS BLOG STYLES */
+
+/* posts section border fix */
+#main-content-wrap {
+    border: none;
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.1);
+}
+
+
+#main-content-wrap .list-block > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+/* posts spacing */
+.content-news .container {
+    padding: 60px 15px;
+}
+
+
+/* post img fixes */
+.list-block > div a.list-thumb {
+    background-size: cover;
+    border-radius: 15px;
+}
+
+
+/* post brief - sizing and positioning */
+.list-block > div > div:nth-of-type(2) {
+    margin-top: 40px;
+    width: 100% !important;
+}
+
+/* post title */
+a.list-title {
+    font-family: 'Jura' !important;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+/* date */
+.list-date {
+    padding: 5px 0 15px 0;
+}
+
+
+/* post excerpt overflow fix */
+.list-lead > p {
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.6;
+    text-overflow: ellipsis;
+    margin-bottom: 20px !important;
+}
+
+
+/* post read more button */
+.list-lead ~ .t-right .small.button {
+    border-radius: 5px !important;
+    font-family: 'Jura' !important;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    padding: 15px 25px;
+}
+
+@media (min-width: 1090px) {
+
+    #main-content-wrap .list-block > div {
+        flex-direction: row;
+        align-items: initial;
+    }
+
+    .list-block > div > div:nth-of-type(2) {
+        margin-top: 0;
+        width: 60% !important;
+    }
+
+    .content-news .container {
+        padding: 80px 0;
+    }
+
+}
+
+
+/* SINGLE POST STYLES */
+
+img.article-img {
+    width: 100%;
+    border-radius: 15px;
+    max-height: 450px;
+    object-fit: cover;
+}
+
+.date ~ .t-justify {
+    line-height: 1.65;
+    padding-top: 30px;
+}
+
+.gallery-wrap {
+    padding: 50px 0;
+}
+
+.gallery-wrap a.gal3-link {
+    border-radius: 10px;
+}
+
+.embed-wrap iframe {
+    border-radius: 15px;
+    margin-bottom: 50px;
+	max-width: 100%;
+}
+
+.button[href='javascript:history.go(-1)'] {
+    padding: 15px 25px;
+    font-size: 18px;
+    font-family: 'Jura' !important;
+    border-radius: 8px;
+}
